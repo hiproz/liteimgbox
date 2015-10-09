@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="keywords" content="X宫格">
+    <meta name="description" content="show">
+    <title>X宫格效果演示</title>
+    <!-- imgbox 默认css，不需要修改 -->
+    <link rel="stylesheet" type="text/css" href="./css/imgbox.css">
+    <!-- 页面的控制在这里 -->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <!-- imgbox 依赖 -->
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <!-- imgbox js -->
+    <script type="text/javascript" src="./js/jquery.imgbox.js"></script>
+    <!-- imgbox 的实例
+        $("a").imgbox({
+          padding: 10,               // Set the padding/transparent border around the image.
+          border: 2,                 // Set the solid border around the image.
+          alignment: 'center',       // Position - may be auto OR center.
+          allowMultiple: false,      // Allow opening multiple imgBoxes.
+          autoScale: true,           // Scale the image to fit the available space.
+          speedIn: 500,              // Set the zoom-in speed.
+          speedOut: 500,             // Set the zoom-out speed.
+          easingIn: 'swing',         // Set the zoom-in animation easing.
+          easingOut: 'swing',        // Set the zoom-out animation easing.
+          zoomOpacity: false,        // If true, changes image transparency when zooming.
+          overlayShow: true,         // Display an overlay under the imgBox.
+          overlayOpacity: 0.7,       // Set overlay opacity.
+          hideOnOverlayClick: true,  // Hide imgBox when the overlay is clicked.
+          hideOnContentClick: false, // Hide imgBox when the image is clicked.
+          slideshow: true,           // Display next/previous controls.
+          theme: 'light'             // Choose a color scheme (light/black).
+});
+    -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#qr1,#qr2,#qr3,#qr4,#qr5,#qr6,#qr7,#qr8,#qr9").imgbox({
+                'speedIn': 0,
+                'speedOut': 0,
+                'alignment': 'center',
+                'overlayShow': true,
+                'allowMultiple': false
+            });
+        });
+    </script>
+</head>
+
+<body>
+<div class="head"></div>
+<div class="main_pro">
+    <a id="qr1" title=""
+       href="images/demo.jpg"><img alt="" src="images/demo.jpg"></a>
+    <a id="qr2" title=""
+       href="images/demo.jpg"><img alt="" src="images/demo.jpg"></a>
+    <a id="qr3" title=""
+       href="images/demo.jpg"><img alt="" src="images/demo.jpg"></a>
+    <a id="qr4" title=""
+       href="images/demo.jpg"><img alt="" src="images/demo.jpg"></a>
+    <a id="qr5" title=""
+       href="images/demo.jpg"><img alt="" src="images/demo.jpg"></a>
+    <a id="qr6" title=""
+       href="images/demo.jpg"><img alt="" src="images/demo.jpg"></a>
+    <a id="qr7" title=""
+       href="images/demo.jpg"><img alt="" src="images/demo.jpg"></a>
+    <a id="qr8" title=""
+       href="images/demo.jpg"><img alt="" src="images/demo.jpg"></a>
+    <a id="qr9" title=""
+       href="images/demo.jpg"><img alt="" src="images/demo.jpg"></a>
+    <div class="clear"></div>
+</div>
+
+<!-- 点击的动态效果区域 -->
+<div id="imgbox-loading" style="display: none;">
+    <div style="opacity: 0.4;"></div>
+</div>
+<div id="imgbox-overlay" style="display: none; height: 1005px; opacity: 0.5;"></div>
+
+<!-- 页尾 -->
+<div class="foot_top"></div>
+<div class="foot">
+    <p><a style="color:#333;" href="http://www.goodmemory.cc/" target="_blank">点滴</a></p>
+</div>
+<div class="foot_bot"></div>
+</body>
+</html>
