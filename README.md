@@ -12,4 +12,4 @@ imgbox 最新版的地址：https://github.com/tsi/jQuery.imgBox
 
 3. 再次点击关闭
 
-效果展示： http://app.goodmemory.cc/demo/x_grid/
+效果展示： http://wp.goodmemory.cc/demos/x_grid/
